@@ -12,4 +12,4 @@ produto.nome = 'Mesa'
 console.log(produto)
 produto.nome = undefined //Evitar atribuir undefined
 
-console.log(produto)
+console.log(produto.nome)
