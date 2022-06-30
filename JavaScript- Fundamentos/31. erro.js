@@ -2,10 +2,10 @@ function erro(erro) {
     throw new Error('...')
 }
 
-function imprimirNomeGritado(obj) {
+function imprimirNomeGritado([nome, sexo]) {
     try {
-        console.log(obj.nome.toUpperCase() + '!!!')
-        console.log(obj.sexo.toUpperCase() + '!!!')
+        console.log(nome.toUpperCase() + '!!!')
+        console.log(sexo.toUpperCase() + '!!!')
     } catch (e) {
         erro(e)
     }finally{
@@ -20,5 +20,5 @@ const obj = {
     sexo: 'Masculino'
 }
 
-imprimirNomeGritado(obj)
+imprimirNomeGritado([obj.nome, obj.sexo])
 // console.log(imprimirNomeGritado())
